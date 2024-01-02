@@ -1,16 +1,7 @@
 // DataTypes :
-// number
-// string
-// boolean
-// object
-// Array
-// tuple
-// enum
-// any
+// number// string// boolean// object// Array// tuple// enum// any
 
-// number
-// string
-// boolean
+// number// string// boolean
 let marks: number = 90,
   surName: string = "Rysen",
   examPassed: boolean = true;
@@ -18,9 +9,7 @@ examPassed
   ? console.log(`${surName} has passed the exam with ${marks} Marks`)
   : "";
 
-// object
-// Array
-// tuple
+// object// Array// tuple
 let employee: {
   name: string;
   id: number;
@@ -35,8 +24,7 @@ let msg = `${employee.name} has skills ${employeeSkills} with Level ${employeeLe
 
 console.log(msg);
 
-// enum
-// any
+// enum// any
 enum employeeRole {
   Developer = 100,
   Tester,
