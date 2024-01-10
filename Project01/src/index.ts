@@ -1,6 +1,7 @@
 class College {
   private studentList: string[] = [];
   protected collegeEvents: string[] = [];
+  static playGround: string = "Football Ground";
 
   constructor(
     private readonly id: string,
@@ -39,6 +40,10 @@ class CSEBranch extends College {
   set addCseSubjects(subject: string[]) {
     this.cseSubjects.push(...subject);
   }
+
+  printStaticMember() {
+    console.log(College.playGround);
+  }
 }
 
 class ECEBranch extends College {
@@ -64,3 +69,5 @@ console.log(cseBranchClass.addCseSubjects);
 const eceBranchClass = new ECEBranch("E1", "Ravan");
 eceBranchClass.addAnEvent = ["Cricket", "Football"];
 console.log(eceBranchClass.addAnEvent);
+
+class School {}

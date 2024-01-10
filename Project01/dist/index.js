@@ -17,6 +17,7 @@ class College {
         console.log(this.studentList);
     }
 }
+College.playGround = "Football Ground";
 class CSEBranch extends College {
     constructor(id, studentName) {
         super(id, studentName, "CSE");
@@ -30,6 +31,9 @@ class CSEBranch extends College {
     }
     set addCseSubjects(subject) {
         this.cseSubjects.push(...subject);
+    }
+    printStaticMember() {
+        console.log(College.playGround);
     }
 }
 class ECEBranch extends College {
@@ -52,3 +56,5 @@ console.log(cseBranchClass.addCseSubjects);
 const eceBranchClass = new ECEBranch("E1", "Ravan");
 eceBranchClass.addAnEvent = ["Cricket", "Football"];
 console.log(eceBranchClass.addAnEvent);
+class School {
+}
